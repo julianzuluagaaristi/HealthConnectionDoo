@@ -1,0 +1,16 @@
+<form>
+
+    <label for="profesionalSalud"> NombreProfesional de Salud:</label>
+    <input id="profesionalSalud" name="profesionalSalud" [(ngModel)]="agenda.profesionalSalud.nombreCompletoProfesionalSalud.primerNombre">
+    
+    <label for="fechaInicio">Fecha de Inicio:</label>
+    <input type="text" id="fechaInicio" name="fechaInicio" [(ngModel)]="agenda.fechaInicio">
+    
+    <label for="fechaFin">Fecha de Fin:</label>
+    <input type="text" id="fechaFin" name="fechaFin" [(ngModel)]="agenda.fechaFin">
+    
+    <label for="precioServicio">Precio del Servicio:</label>
+    <input type="number" id="precioServicio" name="precioServicio" [(ngModel)]="agenda.precioServicio">
+
+    <button class="btn btn-btn" (click)="consultar()">Consultar</button>
+  </form>
